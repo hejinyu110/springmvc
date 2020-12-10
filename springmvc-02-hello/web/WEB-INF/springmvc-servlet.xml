@@ -13,6 +13,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <!-- 使用扫描机制扫描控制器类，控制器类都在controller包及其子包下 -->
     <context:component-scan base-package="controller" />
+    <mvc:default-servlet-handler/> <!--默认的资源文件  不处理-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/" />
         <property name="suffix" value=".jsp" />
